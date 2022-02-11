@@ -46,11 +46,18 @@ app.get('/albums/:id', (req, res, next) => {
     spotifyApi.getArtistAlbums(req.params.id)
         .then(albums => {
             const artistAlbums = albums.body.items
-            console.log(artistAlbums[0].images[1].url)
             res.render('albums', { artistAlbums })
         })
         .catch(error => console.log(error)) 
 })  
 
+app.get('/albums/tracks/:trackid', (req, res, next) => {
+    spotifyApi.getAlbumTracks(req.params.trackid)
+        .then(albumTracks => {
+            const tracks = albumTracks.body.items
+            res.render('tracks', { tracks })
+        })
+        .catch(error => console.log(error)) 
+}) 
 
 app.listen(3000, () => console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊'));
