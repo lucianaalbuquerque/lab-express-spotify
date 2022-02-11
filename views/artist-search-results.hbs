@@ -1,9 +1,9 @@
 <div class="artistsResults">
     {{#each artistResults}}
         <div class="artist">
-            <img src="{{this.images}}" alt="">
+            <img src="{{this.images.0.url}}" alt="">
             <p class="name">{{this.name}}</p>
-            {{!-- <button><a class="album" href="/beers/beer-{{this.id}}">{{this.albums}}</a></button> --}}
+            <button><a class="album" href="/albums/{{this.id}}">View Albums</a></button>
             {{!-- {{> beerpartial this}} --}}
         </div>
     {{/each}}
