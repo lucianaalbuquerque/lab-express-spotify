@@ -1,7 +1,7 @@
-<div class="artistsResults">
+<div class="artists-results">
     {{#each artistResults}}
         <div class="artist">
-            <img src="{{this.images.0.url}}" alt="">
+            <div class="artist-images"><img src="{{this.images.0.url}}" alt=""></div>
             <p class="name">{{this.name}}</p>
             <button><a class="album" href="/albums/{{this.id}}">View Albums</a></button>
             {{!-- {{> beerpartial this}} --}}

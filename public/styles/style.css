@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: cadetblue;
+    background-color: rgb(14, 78, 75);
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.search {
+    background-image: "/public/images/spotify-background.jpeg";
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.album-cover {
+    background-image: url(); 
+    width: 100px;
+}
+ 
+/* A R T I S T */
+
+.artists-results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.artist-images {
+    width: 100px;
+}
+
+/* ALBUM */
+
+.albums-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.albums {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255,255,255, 0.5);
+    color: whitesmoke;
+}
+
+/* TRACKS */
+
+.tracks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+}
