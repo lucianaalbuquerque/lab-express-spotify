@@ -32,7 +32,6 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/artist-search', (req, res, next) => {
-
     spotifyApi
     .searchArtists(req.query.artistSearch)
         .then(data => {

@@ -1,26 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500;1,900&display=swap');
 
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: cadetblue;
-    background-color: rgb(14, 78, 75);
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin:2px;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/images/spotify-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    background-color: rgba(255,255,255, 0.5);
+    width: 50vw;
+    height: 20vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt {
+    margin: 5px;
+}
+
+.search button {
+    background-color: rgb(236, 72, 72);
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border: 0px;
+    border-radius: 3%;
+}
+
+.search input {
+    width: 50%;
+    border: 0px;
+    border-radius: 2%;
+    padding: 10px;
+    box-shadow: inset 1px 1px 1px grey;
 }
 
 img {
     width: 150px;
     margin: 0 auto;
-}
-
-.search {
-    background-image: "/public/images/spotify-background.jpeg";
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.album-cover {
-    background-image: url(); 
-    width: 100px;
 }
  
 /* A R T I S T */
@@ -29,7 +74,8 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-around;
+    background-color: white;
 }
 
 .artist {
@@ -42,11 +88,16 @@ img {
     width: 300px;
     margin: 10px;
     padding: 10px;
-    background-color: white;
+    background-color: gray;
+    color: white;
 }
 
-.artist-images {
-    width: 100px;
+.artist button {
+    background-color: rgba(255,255,255, 0.5);
+    color: grey;
+    border-radius: 5%;
+    border: 0px;
+    padding: 5px 10px;
 }
 
 /* ALBUM */
@@ -55,6 +106,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .albums {
@@ -63,13 +115,29 @@ img {
     justify-content: center;
     align-items: center;
     justify-content: center;
+    justify-items: center;
     align-content: center;
-    height: 400px;
+    height: 250px;
     width: 200px;
     margin: 10px;
     padding: 10px;
-    background-color: rgba(255,255,255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(150, 150, 150, 0.4);
     color: whitesmoke;
+    box-shadow: 2px 2px 2px rgb(223, 221, 221);
+}
+
+.album-cover {
+    background-image: url(); 
+    height: 120px;
+}
+
+hr {
+    border: 0px;
+    background-color: white;
+    color: white;
+    height: 1.2px;
+    width: 60px;
 }
 
 /* TRACKS */
@@ -77,6 +145,19 @@ img {
 .tracks {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 500px;
+    justify-content: center;
+}
+
+.track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    margin: 2px;
+    border-radius: 30px;
+}
+
+.track p {
+    margin-left: 20px;
 }
